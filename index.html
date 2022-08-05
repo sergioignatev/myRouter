@@ -12,12 +12,28 @@
 <body>
     <nav>
         
-<a href="#demo.html" >DEMO</a>
-<a href="#about.html">ABOUT</a>
+        <a href="#demo"><button onclick="demo()">DEMO</button></a>
+<a href="#about"><button onclick="about()">ABOUT</button></a>
     </nav>
-<div id="content"></div>
+    <div id="content"></div>
+<script >
 
+let dem=`<h1 id="demo">DEMO</h1>`
+let abou =`<h1 id="about">About</h1>`
+let id=document.getElementById("content")
 
+function demo(){
+    id.innerHTML=dem
+   
+
+}
+
+function about(){
+    id.innerHTML=abou;
+    
+}
+
+</script>
 </body>
 
 
