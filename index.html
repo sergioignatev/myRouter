@@ -11,16 +11,21 @@
 </head>
 <body>
     <nav>
-<button   href="#demo">DEMO</button>
-<button  href="#about">ABOUT</button>
+        <div id="demo"></div>
+<button  onclick="demo()" >DEMO</button>
+<button  onclick="about()">ABOUT</button>
     </nav>
 <div id="content"></div>
-<div id="demo">DEMO</div>
-<div id="about">ABOUT</div>
+
 
 </body>
 
-<script>
+<script src="srcipts.js">
  
+</script>
+<script>
+let length = window.history.length;
+document.getElementById("demo").innerHTML = length;
+
 </script>
 </html>
